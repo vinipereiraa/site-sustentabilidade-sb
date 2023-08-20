@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* VARIÁVEIS DAS CORES */
+
+:root {
+    ---branco: #fff;
+    ---preto: #000;
+    ---preto1: #222020;
+    ---verde: #7ac143;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 120px;
+}
+
+.box-header, 
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.box-header {
+    background-color: var(---branco);
+    box-shadow: 1px 1px 4px var(---preto1);
+    height: auto;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: var(---preto1);
+    transition: 1s;
+}
