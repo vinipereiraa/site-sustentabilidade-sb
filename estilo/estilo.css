@@ -12,6 +12,7 @@
     ---branco: #fff;
     ---preto: #000;
     ---preto1: #222020;
+    ---cinza: #b3abab;
     ---verde: #7ac143;
 }
 
@@ -26,6 +27,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;
+    position: relative;
+    box-shadow: 0px 3px 10px var(---preto1);
 }
 
 .logo {
@@ -34,8 +37,8 @@ header {
 }
 
 #img-logo {
-    width: 140px;
-    height: 145px;
+    width: 150px;
+    height: 150px;
 }
 
 .navgation-links {
@@ -70,7 +73,10 @@ header {
 
 /* CSS PARA O BANNER COM CONTEÚDO PRINCIPAL */
 .banner {
-    background: url(../imagens/campoensolarado.jpg);
+    background-image: url(../imagens/campoimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     min-height: 600px;
     display: flex;
     justify-content: center;
@@ -100,3 +106,5 @@ header {
     text-align: center;
     font-family: 'Inter Fight', sans-serif;
 }
+
+/* CSS PARA CAIXA DE IMAGENS E TEXTO */
