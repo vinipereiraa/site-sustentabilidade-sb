@@ -25,10 +25,10 @@ header {
 
 .box-navgation {
     display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
+    justify-content: space-around;
+    height: 8em;
     position: relative;
-    box-shadow: 0px 3px 10px var(---preto1);
+    box-shadow: 0px 0.5px 10px black;
 }
 
 .logo {
@@ -37,8 +37,8 @@ header {
 }
 
 #img-logo {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
 }
 
 .navgation-links {
@@ -56,20 +56,46 @@ header {
     margin: 0 15px;
 }
 
-.nav-link {
+/* .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
     color: var(---preto);
     font-weight: 400;
 }
-
 .nav-link:hover {
     cursor: pointer;
     transition: 0.5s;
     color: var(---verde);
     text-decoration: underline;
-}
+} */
 
+/* acima está o código antigo do botão para navegação do header, agora abaixo desse comentário está o novo estilo com animação */
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    color: var(---preto);
+    text-decoration: none;
+    padding: 10px 0;
+    transition: transform 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(---verde);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    color: var(---verde);
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
 
 /* CSS PARA O BANNER COM CONTEÚDO PRINCIPAL */
 .banner {
