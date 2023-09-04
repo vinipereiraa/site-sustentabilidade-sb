@@ -18,17 +18,12 @@
 
 
 /* CSS HEADER */
-header {
-    background-color: var(---branco);
-    box-shadow: 0px 3px 10px var(---preto1);
-}
-
 .box-navgation {
     display: flex;
     justify-content: space-around;
     height: 8em;
     position: relative;
-    box-shadow: 0px 0.5px 10px black;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.450);
 }
 
 .logo {
@@ -44,6 +39,8 @@ header {
 .navgation-links {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    z-index: 1;
 }
 
 .navgation-links ul {
@@ -56,20 +53,76 @@ header {
     margin: 0 15px;
 }
 
-/* .nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: var(---preto);
-    font-weight: 400;
-}
-.nav-link:hover {
+/* primeiro passo buscar os icones de fechar e crirar a navegação e colocar eles dentro de tag <button/>, após isso aplicar o seguinte css abaixo*/
+.btn_header {
+    display: none;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
-    transition: 0.5s;
-    color: var(---verde);
-    text-decoration: underline;
-} */
+}
 
-/* acima está o código antigo do botão para navegação do header, agora abaixo desse comentário está o novo estilo com animação */
+/* agora você vai colocar a condição de que, quando a tela tiver o maximo dela até 768px vai rodar todo o código dentro do @media screen */
+@media screen and (max-width: 768px) {
+    /* aqui dentro você vai colocar as configurações em css para quando a tela for no máximo 768px, esse conceito se aplica a todos @media screen and (max-width: 768px), resaltando que @media screen e para detectar o tamanho da tela, e and(max-width: 768px) e a condição disso, como um if em outras linguagens de programação */
+    .logo #img-logo {
+        height: 125px;
+        width: 125px;
+    }
+    .btn_header {
+        display: block;
+    }
+    .logo {
+        margin-right: 20px;
+    }
+    .open {
+        margin-left: 20px;
+    }
+    .close {
+        margin-top: 25px;
+    }
+    .navgation-links {
+        flex-direction: column;
+        top: 0;
+        position: absolute;
+        background-color: var(---branco);
+        padding: 20px;
+        width: 24vw;
+        height: 1000%;
+        margin-left: -160vw;
+        animation: 1s;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.350);
+        align-items: center;
+    }
+    .navgation-links ul {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .navgation-links .nav-link {
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+}
+
+/* criando animações por etapas para abrir e fechar a navegação */
+
+@keyframes openSidebar {
+    from {
+        margin-left: -135vw;
+    }
+    top {
+        margin-left: -70vw;
+    }
+}
+
+@keyframes closeSidebar {
+    from {
+        margin-left: -70vw;
+    }
+    top {
+        margin-left: -135vw;
+    }
+}
 
 .nav-link {
     position: relative;
@@ -100,6 +153,8 @@ header {
 /* CSS PARA O BANNER COM CONTEÚDO PRINCIPAL */
 .banner {
     background-image: url(../imagens/campoimg.jpg);
+    filter: contrast(200%);
+    filter: saturate(150%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -133,4 +188,53 @@ header {
     font-family: 'Inter Fight', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+    .banner .quadrado-conteudo {
+       width: 250px;
+       padding: 25px 10px 5px 10px;
+    }
+    .banner .quadrado-conteudo h1 {
+        margin-bottom: 17.5px;
+    }
+
+}
+
 /* CSS PARA CAIXA DE IMAGENS E TEXTO */
+/* cards */
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 75px 150px;
+}
+.card {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.450);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.card .image {
+    background-image: url(../imagens/campoimg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 25px;
+    filter: contrast(200%);
+    filter: saturate(150%);
+}
+.card .text-card {
+    margin: 0 25px 25px 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-cards {
+        padding: 31.5px 75px;
+    }
+}
