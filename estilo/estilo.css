@@ -234,6 +234,9 @@
 
 @media screen and (max-width: 768px) {
     .container-cards {
-        padding: 31.5px 75px;
+        padding: 31.5px 31.5px;
+    }
+    .card {
+        width: 281.5px;
     }
 }
