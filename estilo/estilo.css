@@ -239,5 +239,6 @@
     .card {
         width: 281.5px;
         margin: 0;
+        gap: 15px;
     }
 }
