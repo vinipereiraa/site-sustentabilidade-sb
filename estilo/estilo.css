@@ -238,5 +238,6 @@
     }
     .card {
         width: 281.5px;
+        padding: 0;
     }
 }
