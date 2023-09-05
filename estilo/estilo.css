@@ -206,7 +206,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 75px 150px;
-    gap: 15px;
+    gap: 50px;
 }
 .card {
     width: 250px;
