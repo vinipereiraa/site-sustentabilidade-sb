@@ -206,7 +206,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 75px 150px;
-    gap: 50px;
 }
 .card {
     width: 250px;
@@ -215,8 +214,8 @@
     flex-direction: column;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.450);
     border-radius: 10px;
-    margin-bottom: 25px;
     align-items: center;
+    margin: 0 25px 25px 25px;
 }
 .card .image {
     background-image: url(../imagens/campoimg.jpg);
