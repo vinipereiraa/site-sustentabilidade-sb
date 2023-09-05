@@ -205,7 +205,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-direction: row;
     padding: 75px 150px;
     gap: 15px;
 }
