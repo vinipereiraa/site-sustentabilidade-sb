@@ -217,6 +217,7 @@
     border-radius: 10px;
     margin-bottom: 25px;
     align-items: center;
+    gap: 15px;
 }
 .card .image {
     background-image: url(../imagens/campoimg.jpg);
