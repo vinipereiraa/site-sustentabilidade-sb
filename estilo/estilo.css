@@ -17,7 +17,7 @@
 }
 
 
-/* CSS HEADER */
+/* CSS PARA HEADER */
 .box-navgation {
     display: flex;
     justify-content: space-around;
@@ -199,8 +199,7 @@
 
 }
 
-/* CSS PARA CAIXA DE IMAGENS E TEXTO */
-/* cards */
+/* CSS PARA OS CARDS */
 .container-cards {
     display: flex;
     justify-content: space-around;
@@ -228,6 +227,7 @@
     filter: contrast(200%);
     filter: saturate(150%);
 }
+
 .card .text-card {
     margin: 0 25px 25px 25px;
 }
@@ -240,5 +240,51 @@
         width: 281.5px;
         margin: 0;
         margin-bottom: 45px;
+    }
+}
+
+/* CSS PARA O RODAPÉ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+    background-color: var(---branco);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.350);
+}
+
+.agroup-elements-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.agroup-elements-left, .elements-left
+.agroup-elements-left, .elements-rigth {
+    margin: 20px;
+}
+
+.agroup-elements-left .elements-left img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.agroup-elements-left, .elements-rigth ul li{
+    font-family: 'Inter Tigth 300', sans-serif;
+    margin: 10px;
+}
+
+.footer h3 {
+    text-align: center;
+    font-family: "Inter Tigth 300", sans-serif;
+}
+
+@media screen and (max-width:760px) {
+    .footer {
+        padding: 12.5px 25px;
+    }
+
+    .row {
+        flex-direction: column;
     }
 }
