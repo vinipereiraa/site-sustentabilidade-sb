@@ -194,8 +194,8 @@ strong {
 
 @media screen and (max-width: 768px) {
     .banner .quadrado-conteudo {
-       width: 250px;
-       padding: 25px 10px 5px 10px;
+       width: 500px;
+       padding: 50px 20px 10px 20px;
     }
     .banner .quadrado-conteudo h1 {
         margin-bottom: 17.5px;
