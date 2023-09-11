@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
+    <!-- LINK DO SITE PARA PEGAR OS ÍCONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo/estilo.css">
     <title>Simon Bolívar Sustentável</title>
 </head>
@@ -43,7 +45,7 @@
     <div class="banner" id="banner" tabindex="0" onclick="closeSidebar()">
         <div class="quadrado-conteudo">
             <h1>OBJETIVO DO SITE</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis iusto suscipit illo recusandae rem voluptates voluptatibus alias vel, eos quisquam magnam consectetur iste inventore vero blanditiis ullam quas officiis.</p>
+            <p>Nós somos alunos do 3° do Novo Ensino Médio na Escola Estadual Simon Bolívar e recebemos a proposta de desenvolver uma ferramenta que seja útil para algo/alguém, com isso decidimos fazer esse site informativo sobre Sustentabilidade, contendo alguns hábitos que você pode adquirir em seu dia-dia para tornar o mundo mais Sustentável. <strong>Confira logo abaixo as essas dicas!</strong></p>
         </div>
     </div>
 
@@ -84,28 +86,47 @@
     </div>
 
     <!-- RODAPÉ DO SITE -->
-    <div class="footer" id="footer">
-        <div class="agroup-elements-left">
-            <div class="elements-left">
-                <img src="/imagens/secondlogo.png" alt="Logo Simon Sustentável">
-                <p>Projeto Desenvolvido em Setembro de 2023</p>
-            </div>
-            <div class="elements-center"></div>
-            <div class="elements-rigth">
-                <h3>Colaboradores</h3>
-                <ul>
-                    <li>Guilherme Silva</li>
-                    <li>Thomas Natanael</li>
-                    <li>Samuel Ferreira</li>
-                </ul>
-                <h3>Desenvolvedores</h3>
-                <ul>
-                    <li>Gabriel Antonio</li>
-                    <li>Vinícius Caetano</li>
-                </ul>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Simon Bolívar Sustentável</h1>
+            <p>Dicas para tornar o mundo mais sustentável&#x1F30E;</p>
+
+            <div id="footer_options">
+                <a href="#" class="footer-link" id="curta">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="salve">
+                    <i class="fa-solid fa-bookmark"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="share">
+                    <i class="fa-regular fa-share-from-square"></i>
+                </a>
             </div>
         </div>
-        <h3>&copy;2023 por Simon Bolívar Sustentável</h3>
+    
+        <ul class="list-devs">
+            <li><h3>Desenvolvedores</h3></li>
+            <li><a href="#" class="footer-link">Gabriel Antonio</a></li>
+            <li><a href="#" class="footer-link">Vinícius Caetano</a></li>
+        </ul>
+
+        <ul class="list-colaboradores">
+            <li><h3>Colaboradores</h3></li>
+            <li><a href="#" class="footer-link">Guilherme Silva</a></li>
+            <li><a href="#" class="footer-link">Samuel Ferreira</a></li>
+            <li><a href="#" class="footer-link">Thomas Natanael</a></li>
+        </ul>
+
+        <div id="footer-credits">
+            <h3>Créditos</h3>
+                <p>Todas as imagens usadas nesse site foram fornecidas pela plataforma <strong>Freepik</strong></p>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        <p>Todos os Direitos Reservados&copy;</p>
     </div>
 
     <script src="./javascript/main.js"></script>

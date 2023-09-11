@@ -188,6 +188,10 @@
     font-family: 'Inter Fight', sans-serif;
 }
 
+strong {
+    color: var(---verde);
+}
+
 @media screen and (max-width: 768px) {
     .banner .quadrado-conteudo {
        width: 250px;
@@ -211,7 +215,7 @@
     height: 400px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.450);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.450);
     border-radius: 10px;
     align-items: center;
     margin: 0 25px 25px 25px;
@@ -244,47 +248,124 @@
 }
 
 /* CSS PARA O RODAPÉ */
-.footer {
+footer {
+    width: 100%;
+    color: var(---branco);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(---branco);
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.450);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+    font-size: 24px;
+}
+
+
+#footer_options {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_options .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(---branco);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_options .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_options .footer-link:hover {
+    opacity: 0.8;
+}
+
+#curta {
+    background: var(---preto);
+}
+
+#salve {
+    background-color: var(---preto);
+}
+
+#share {
+    background-color: var(---preto);
+}
+
+.list-devs {
     display: flex;
     flex-direction: column;
-    padding: 25px 50px;
-    background-color: var(---branco);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.350);
+    gap: 0.75rem;
+    list-style: none;
 }
 
-.agroup-elements-left {
+.list-devs .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.list-devs .footer-link:hover {
+    color: var(---verde);
+}
+
+.list-colaboradores {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
 }
 
-.agroup-elements-left, .elements-left
-.agroup-elements-left, .elements-rigth {
-    margin: 20px;
+.list-colaboradores .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
 }
 
-.agroup-elements-left .elements-left img {
-    width: 120px;
-    height: 120px;
-    border-radius: 5px;
+.list-colaboradores .footer-link:hover {
+    color: var(---verde);
 }
 
-.agroup-elements-left, .elements-rigth ul li{
-    font-family: 'Inter Tigth 300', sans-serif;
-    margin: 10px;
+#footer_credits {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.footer h3 {
-    text-align: center;
-    font-family: "Inter Tigth 300", sans-serif;
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(---branco);
+    font-size: 16px;
+    padding: 1.5rem;
+    font-weight: 100;
 }
 
-@media screen and (max-width:760px) {
-    .footer {
-        padding: 12.5px 25px;
+/* RESPONSIVIDADE PARA O RODAPÉ */
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
+}
 
-    .row {
-        flex-direction: column;
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
     }
 }
