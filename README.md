@@ -5,6 +5,6 @@ Esse projeto tem como objetivo desenvolver um ferramenta que seja útil para alg
 O site foi desenvolvido em HTML5, CSS3 e JavaScript
 As imagens foram fornecidas pela plataforma Freepik
 
-Link de acesso pelo GitHub Pages: 
+Link de acesso pelo GitHub Pages: https://vinipereiraa.github.io/site-sustentabilidade-sb/
 
-Site da Freepik: 
+Site da Freepik: https://br.freepik.com/
