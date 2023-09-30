@@ -26,7 +26,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
+    background-color: var(---cinza);
+}
+
+::-webkit-scrollbar-thumb:hover {
     background-color: var(---verde);
+    transition: 2s;
 }
 
 /* CSS PARA HEADER */
@@ -396,6 +401,7 @@ footer {
 
 .list-devs .footer-link:hover {
     color: var(---verde);
+    transition: 0.2s;
 }
 
 .list-colaboradores {
@@ -442,4 +448,100 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
+}
+
+/* CSS PARA A JANELA MODAL */
+.botao{
+    padding: 22px 25px;
+    display: inline;
+    background-color: var(---verde);
+    border-radius: 40px;
+    color: var(---branco);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.botao:hover{
+    background-color: var(---cinza);
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal{
+    width: 60%;
+    min-width:200px;
+    min-height: 200px;
+    background-color: #ffffff60;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Inter Fight 300', sans-serif;
+    color: var(---preto);
+}
+
+.modal a {
+    color: var(---preto);
+}
+
+.modal a:hover {
+    color: var(---verde);
+    transition: 0.2s;
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(---verde);
+    color: var(---branco);
+    font-weight: 700;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.modal h1{
+    margin-bottom: 20px;
+}
+
+@keyframes animate-modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+.mostrar .modal{
+    animation: animate-modal .3s;
 }
