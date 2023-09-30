@@ -499,12 +499,7 @@ footer {
 }
 
 .modal a {
-    color: var(---preto);
-}
-
-.modal a:hover {
     color: var(---verde);
-    transition: 0.2s;
 }
 
 .fechar{
