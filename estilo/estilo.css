@@ -209,6 +209,10 @@ strong {
     color: var(---verde);
 }
 
+.botao strong {
+    color: var(---branco);
+}
+
 @media screen and (max-width: 768px) {
     .banner .quadrado-conteudo {
        width: 500px;
